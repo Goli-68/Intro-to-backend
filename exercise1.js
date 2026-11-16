@@ -6,4 +6,5 @@ function home() {
 
 // The current year route
 function currentYear() {
+    return new Date().getFullYear().toString();
 }
