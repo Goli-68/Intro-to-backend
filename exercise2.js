@@ -6,10 +6,7 @@ const server = http.createServer((req, res) => {
 
     // Our routes will go here
 
-// Start the server
-server.listen(3000, () => {
-    console.log("Server running at http://localhost:3000");
-});
+
 if (req.url === "/about") {
 
     res.writeHead(200, {
@@ -136,4 +133,8 @@ else {
     res.end("Page not found");
 
 }
+});
+// Start the server
+server.listen(3000, () => {
+    console.log("Server running at http://localhost:3000");
 });
